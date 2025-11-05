@@ -13,26 +13,22 @@ The repository contains the following core files for data acquisition and model 
 
 | File | Purpose | Data Type | Assignment Parts |
 |------|----------|------------|------------------|
-| `scraper.py` | Scrapes Hindi Wikipedia pages for general, article-style text. | Article | Parts A & C |
-| `scraper_reddit.py` | (Recommended) Scrapes multiple subreddits dynamically using Selenium for conversational posts/titles. | Conversational | Part D |
-| `forum_scraper.py` | (Alternative) Scrapes static, multi-page forums using `requests` and `BeautifulSoup`. | Conversational | Part D (Alternative) |
-| `markov_generator.py` | Core logic implementing the `MarkovChain` class and running text generation tasks. | Both | Parts A, C & D |
+| `scraper.py` | Scrapes Hindi Wikipedia pages for general, article-style text and scrapes static, multi-page forums using `requests` and `BeautifulSoup` 
+| `model1.ipynb` | Core logic implementing the `MarkovChain` class and running text generation tasks. 
 
 ---
 
 ## 2. Setup and Installation
 
-This project requires **Python 3** and several external libraries, including **Selenium** for dynamic scraping.
+This project requires **Python 3** and several external libraries, including **BeautifulSoup and Requests** for static scraping.
 
 ### Prerequisites
 
 - **Python 3:** Ensure Python is installed.  
-- **Chrome/Chromium Browser:** Required for `scraper_reddit.py`.  
-- **ChromeDriver:** Download the correct version of ChromeDriver that matches your Chrome/Chromium browser and add it to your system `PATH`.
 
 ### Install Dependencies
 
 Use the following command to install required libraries:
 
 ```bash
-pip install requests beautifulsoup4 selenium
+pip install requests beautifulsoup4 requests
